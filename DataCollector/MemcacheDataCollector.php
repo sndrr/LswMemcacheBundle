@@ -153,4 +153,11 @@ class MemcacheDataCollector extends DataCollector
     {
         return 'memcache';
     }
+    /**
+     * Resets the data
+     */
+    public function reset()
+    {
+        $this->data = array();
+    }
 }
